@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="CannonPong">
+    <output-path>$PROJECT_DIR$/out/artifacts/CannonPong</output-path>
+    <root id="archive" name="CannonPong.jar">
+      <element id="module-output" name="CannonGame" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>
