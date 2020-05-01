@@ -124,6 +124,11 @@ public class GamePanel extends JPanel implements ActionListener {
         requestFocus();
         if (cup.containsBall(ball) && cannon.isLaunched()) {
             s.goal();
+            try {
+                s.setHighScoreInFile();
+            } catch (IOException ioException) {
+                ioException.printStackTrace();
+            }
             cupY = r.nextInt(525);
             cupX = r.nextInt(700) + 250;
             cup.move(cupX, cupY);

@@ -129,10 +129,10 @@ public class Cannon {
             if (angle < 90) angle += 0.1;
         }
         if (KeyboardListener.getPressed().contains(KeyEvent.VK_S)) {
-            if (velocity > 5) velocity -= 0.1;
+            if (velocity > 5) velocity -= 0.01;
         }
         if (KeyboardListener.getPressed().contains(KeyEvent.VK_W)) {
-            if (velocity < 15) velocity += 0.1;
+            if (velocity < 15) velocity += 0.01;
         }
         if (KeyboardListener.getPressed().contains(KeyEvent.VK_SPACE)) {
             if (!launched) {

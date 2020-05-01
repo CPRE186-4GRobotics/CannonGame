@@ -70,18 +70,13 @@ public class Score {
      * @throws IOException
      */
     private void readScore() throws IOException {
-        
-        File file = new File("scoreList.txt");
+        File file = new File("score.txt");
         if (!file.exists()) {
             resetScores();
         }
         Scanner sc = new Scanner(file);
-        
         highScore = sc.nextInt();
-        
-        
         sc.close();
-        
     }
     
     /**
@@ -90,16 +85,14 @@ public class Score {
      * @throws IOException
      */
     public void setHighScoreInFile() throws IOException {
-        File outFile = new File("scoreList.txt");
-        if (!outFile.exists()) {//shouldn't happen but just in case ;)
+        File outFile = new File("score.txt");
+        if (!outFile.exists()) {
             outFile.createNewFile();
         }
         PrintWriter out = new PrintWriter(outFile);
-        
         if (totalPoints > highScore) out.println(totalPoints);
         else out.println(highScore);
         out.close();
-        return;
     }
     
     /**
@@ -108,14 +101,13 @@ public class Score {
      * @throws IOException
      */
     private static void resetScores() throws IOException {
-        File outFile = new File("scoreList.txt");
+        File outFile = new File("score.txt");
         if (!outFile.exists()) {
             outFile.createNewFile();
         }
         PrintWriter out = new PrintWriter(outFile);
         out.println(0);
         out.close();
-        return;
     }
     
 }
