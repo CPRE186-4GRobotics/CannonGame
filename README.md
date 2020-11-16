@@ -9,3 +9,6 @@ Start screen
 
 In game UI
 ![In Game UI](https://i.imgur.com/6gtZy3x.png)
+
+# Extra Information
+This game was written using the early version of the physics found in a Java 2.5D game engine called Pseudo3D, written by a contributor to this repository. More information can be found here: https://github.com/Jeremaster101/Pseudo3D
